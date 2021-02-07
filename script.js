@@ -7,8 +7,8 @@ function loadData() {
             document.getElementById('countryName').innerText ='Country :'+ data[0].name;
             document.getElementById('capital').innerText= 'Capital :'+ data[0].capital;
             
-            const alpha3code = (data[0].alpha3Code).toLowerCase();
-            document.getElementById('flag').src =  `https://restcountries.eu/data/${alpha3code}.svg`;
+            const alpha3code = data[0].flag;
+            document.getElementById('flag').src =  alpha3code;
 
             document.getElementById('officialName').innerText = "OfficialName :" + data[0].altSpellings[1];
             document.getElementById('area').innerText = "Area :" + data[0].area;
