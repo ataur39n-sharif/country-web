@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country details</title>
+    <!-- boostrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="d-flex justify-content-center">About Country details</h1>
+        
+        <div class="d-flex justify-content-center mt-5">
+            <input id="input" class="form-control" type="text" placeholder="type a country name">
+            <button onclick="loadData()" type="button" class="btn btn-primary">Search</button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col">
+                <div class="card">
+                    <img id="flag" src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="countryName" class="card-title"></h5>
+                        <p id="officialName" class="card-text"></p>
+                        <p id="region"></p>
+                        <p id="capital"></p>
+                        <p id="area"></p>
+                        <p id="lang"></p>
+                        <p id="population"></p>
+                        <p id="tk"></p>
+                        <p id="timezone"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
